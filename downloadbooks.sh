@@ -12,5 +12,10 @@ name=`grep "<title>" openurl*|awk -F '>' '{print $2}'|awk -F'|' '{print $1}'`
 echo "Downloading $name ........."
 wget "https://link.springer.com/content/pdf/$link"
 mv "$start"%2F"$end".pdf "$name.pdf"
-mv *.pdf books
+if [ -d "books" ];then
+  mv *.pdf books
+else
+  mlkdir ebooks
+  mv *.pdf books
+fi
 rm -r openurl*
