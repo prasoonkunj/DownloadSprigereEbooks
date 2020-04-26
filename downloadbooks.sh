@@ -15,7 +15,7 @@ mv "$start"%2F"$end".pdf "$name.pdf"
 if [ -d "books" ];then
   mv *.pdf books
 else
-  mlkdir ebooks
+  mkdir ebooks
   mv *.pdf books
 fi
 rm -r openurl*
