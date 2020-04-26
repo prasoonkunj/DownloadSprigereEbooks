@@ -1,7 +1,7 @@
 # DownloadSprigereEbooks
 
 Prerequisite : Linux Machine
-instruction: 
+Instructions: 
 1. Download downloadbooks.sh and excute.sh
 2. Keep those 2 script in same folder.
 3. run excute.sh for downloading all the ebooks.
